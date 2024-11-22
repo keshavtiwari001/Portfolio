@@ -18,6 +18,7 @@ const Header = () => {
                         <NavLink to="/projects" className={({ isActive }) => isActive ? "border-b-2 border-blue-400" : "hover:text-blue-400"} > Projects </NavLink>
                         <NavLink to="/skills" className={({ isActive }) => isActive ? "border-b-2 border-blue-400" : "hover:text-blue-400"} > Skills </NavLink>
                         <NavLink to="/contact" className={({ isActive }) => isActive ? "border-b-2 border-blue-400" : "hover:text-blue-400"} > Contact </NavLink>
+                        <NavLink to="/blogs" className={({ isActive }) => isActive ? "border-b-2 border-blue-400" : "hover:text-blue-400"} > Blogs </NavLink>
 
                     </div>
                 </div>
