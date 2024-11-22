@@ -19,25 +19,25 @@ const Contact = () => {
                         <div className="flex items-center justify-center space-x-4">
                             <Mail className="text-blue-400" size={24} />
                             <a
-                                href="mailto:keshavtiwari@example.com"
+                                href="mailto:keshavtiwari.dev@example.com"
                                 className="text-white hover:text-blue-400 transition-colors"
                             >
-                                keshavtiwari@example.com
+                                keshavtiwari.dev@gmail.com
                             </a>
                         </div>
                         <div className="flex items-center justify-center space-x-4">
                             <Phone className="text-blue-400" size={24} />
                             <a
-                                href="tel:+1234567890"
+                                href="tel:+91-9602443271"
                                 className="text-white hover:text-blue-400 transition-colors"
                             >
-                                +123 456 7890
+                                +91-960 244 3271
                             </a>
                         </div>
                         <div className="flex items-center justify-center space-x-4">
                             <Github className="text-blue-400" size={24} />
                             <a
-                                href="https://github.com/yourusername"
+                                href="https://github.com/keshavtiwari001"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-white hover:text-blue-400 transition-colors"
@@ -48,7 +48,7 @@ const Contact = () => {
                         <div className="flex items-center justify-center space-x-4">
                             <Linkedin className="text-blue-400" size={24} />
                             <a
-                                href="https://linkedin.com/in/yourusername"
+                                href="https://www.linkedin.com/in/keshav-tiwari-5786b3224/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-white hover:text-blue-400 transition-colors"
