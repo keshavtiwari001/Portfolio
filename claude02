@@ -1,0 +1,124 @@
+import React, { useState } from 'react';
+import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+
+const Portfolio = () => {
+    const projects = [
+        {
+            title: "E-Commerce Platform",
+            description: "Full-stack MERN application with Redux state management and Stripe payment integration",
+            technologies: ["React", "MongoDB", "Express", "Node.js", "Redux"],
+            githubLink: "#"
+        },
+        {
+            title: "Social Media Dashboard",
+            description: "Real-time social networking app with WebSocket communication",
+            technologies: ["React", "Socket.IO", "MongoDB", "Express"],
+            githubLink: "#"
+        },
+        {
+            title: "Project Management Tool",
+            description: "Kanban-style project tracking application with user authentication",
+            technologies: ["React", "Node.js", "GraphQL", "MongoDB"],
+            githubLink: "#"
+        }
+    ];
+
+    return (
+        <div className="bg-gray-900 text-white min-h-screen">
+            {/* Navbar */}
+            <nav className="bg-gray-800 p-4 sticky top-0 z-50">
+                <div className="max-w-5xl mx-auto flex justify-between items-center">
+                    <div className="text-2xl font-bold text-blue-400">John Doe</div>
+                    <div className="flex space-x-6">
+                        <a href="#home" className="hover:text-blue-400">Home</a>
+                        <a href="#projects" className="hover:text-blue-400">Projects</a>
+                        <a href="#skills" className="hover:text-blue-400">Skills</a>
+                        <a href="#contact" className="hover:text-blue-400">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            {/* Home Section */}
+            <section id="home" className="min-h-screen flex items-center justify-center p-8">
+                <div className="max-w-5xl mx-auto flex items-center space-x-12">
+                    <div className="w-1/3">
+                        <img
+                            src="/api/placeholder/400/400"
+                            alt="Profile"
+                            className="rounded-full border-4 border-blue-400 shadow-xl"
+                        />
+                    </div>
+                    <div className="w-2/3">
+                        <h1 className="text-4xl font-bold mb-4 text-blue-400">Hello, I'm John Doe</h1>
+                        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                            A passionate MERN stack developer with a love for building innovative and scalable web applications.
+                            With 3+ years of experience, I specialize in creating efficient, responsive, and user-friendly solutions
+                            that solve real-world problems. My expertise lies in full-stack development, focusing on React,
+                            Node.js, and MongoDB technologies.
+                        </p>
+                        <div className="flex space-x-4">
+                            <a
+                                href="#"
+                                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition"
+                            >
+                                Download CV
+                            </a>
+                            <a
+                                href="#contact"
+                                className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 py-3 rounded-lg transition"
+                            >
+                                Contact Me
+                            </a>
+                        </div>
+                        <div className="mt-8 flex space-x-4">
+                            <a href="#" className="hover:text-blue-400"><Github size={24} /></a>
+                            <a href="#" className="hover:text-blue-400"><Linkedin size={24} /></a>
+                            <a href="#" className="hover:text-blue-400"><Mail size={24} /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Projects Section */}
+            <section id="projects" className="bg-gray-800 py-16">
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="text-3xl font-semibold mb-8 text-blue-400 text-center">My Projects</h2>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {projects.map((project, index) => (
+                            <div
+                                key={index}
+                                className="bg-gray-900 p-6 rounded-lg hover:scale-105 transition-transform"
+                            >
+                                <h3 className="text-xl font-bold mb-2 text-blue-300">{project.title}</h3>
+                                <p className="text-gray-400 mb-4">{project.description}</p>
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    {project.technologies.map(tech => (
+                                        <span
+                                            key={tech}
+                                            className="bg-gray-700 text-xs px-2 py-1 rounded-full"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                                <a
+                                    href={project.githubLink}
+                                    className="text-blue-400 hover:underline flex items-center"
+                                >
+                                    <Github size={16} className="mr-2" /> View Project
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Footer */}
+            <footer className="bg-gray-800 p-4 text-center">
+                <p className="text-gray-400">© 2024 John Doe. All Rights Reserved.</p>
+            </footer>
+        </div>
+    );
+};
+
+export default Portfolio;
