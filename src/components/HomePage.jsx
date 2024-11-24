@@ -11,13 +11,13 @@ const HomePage = () => {
     //  download cv func ->
 
     const handleDownload = () => {
-        const fileUrl = "https://drive.google.com/file/d/1raquVajpFbrYWRB3s40J_uUpbLqZqTt_/view?usp=sharing"; // Replace with your file URL
+        const fileUrl = "https://drive.google.com/file/d/1R2oKk1f72DDHkPplfJt1x2QxOWhL4aum/view?usp=sharing"; // my resume link
         const link = document.createElement("a");
         link.href = fileUrl;
-        link.download = "https://drive.google.com/file/d/1raquVajpFbrYWRB3s40J_uUpbLqZqTt_/view?usp=sharing"; // Optional: set the file name
+        link.download = "https://drive.google.com/file/d/1R2oKk1f72DDHkPplfJt1x2QxOWhL4aum/view?usp=sharing"; // it download the url content
         document.body.appendChild(link);
         link.click();
-        document.body.removeChild(link);
+        // document.body.removeChild(link);
     }
 
 
