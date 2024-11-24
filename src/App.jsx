@@ -6,7 +6,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './components/HomePage'
-import Projects from './components/Projects'
+// import Projects from './components/Projects'
+import Projects from './components/projects_/Projects'
+import ProjectDetails from './components/projects_/ProjectDetails'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 
@@ -22,6 +24,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='projects' element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetails />} />
           <Route path='skills' element={<Skills />} />
           <Route path='contact' element={<Contact />} />
         </Routes>

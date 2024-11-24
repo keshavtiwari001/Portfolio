@@ -1,6 +1,7 @@
 import React from 'react'
 import { Github, Linkedin, Mail, FileText } from 'lucide-react';
-import Projects from './Projects';
+// import Projects from './Projects.jsx';
+import Projects from './projects_/Projects'
 import Skills from './Skills';
 import { Link } from 'react-router-dom'
 import Footer from './Footer';
